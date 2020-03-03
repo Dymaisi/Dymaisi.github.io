@@ -487,9 +487,11 @@ $$ </p>
 $$ <br>上式是关于<em>u,x</em>的一阶可分离变量的方程，参照1.4.1求解</p>
 <p>特别地，对于形如<br>$$<br>\frac{dy}{dx}=\frac{x\pm y+a}{x\pm y+b}<br>$$<br>的方程，我们可以化为齐次方程求解</p>
 <p>令\(x=X+h\),\(y=Y+k\),其中<em>h</em>,<em>k</em>为待定常数,则\(\frac{dy}{dx}=\frac{dY}{dX}\)，带入原方程得<br>$$ 
-\frac{dY}{dX}=\frac{X\pm Y+(h\pm k+a)}{X\pm Y+(h\pm k+b)}(*)
-$$ <br>令\(\begin{cases}h\pm k+a=0\h\pm k+b=0\end{cases}\)解得<em>h</em>,<em>k</em></p>
-<p>(*)式即为一阶齐次方程</p>
+\begin{align}
+&\frac{dY}{dX}=\frac{X\pm Y+(h\pm k+a)}{X\pm Y+(h\pm k+b)}(*)\\
+&令\begin{cases}h\pm k+a=0\\h\pm k+b=0\end{cases}解得h,k
+\end{align}
+$$ <br>(*)式即为一阶齐次方程</p>
 <h4 id="1-4-4-伯努利方程"><a href="#1-4-4-伯努利方程" class="headerlink" title="1.4.4 伯努利方程"></a>1.4.4 伯努利方程</h4><p>若有：<br>$$<br>\frac{dy}{dx}+P(x)y=Q(x)y^n,n\in R,n\neq0,1,Q(x)\neq0<br>$$<br>则上式称为<strong>伯努利方程(<em>Bernoulli equation</em>)</strong>，<strong>可化为一阶线性方程</strong></p>
 <p>在伯努利方程两边同乘\(y^{-n}\)得到<br>$$ 
 \begin{align}
