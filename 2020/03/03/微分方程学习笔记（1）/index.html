@@ -438,7 +438,7 @@ $$ </p>
 <p>$$ 
 记F(y)=\int\frac{dy}{h(y)},记G(x)=\int\frac{dy}{h(y)}\\则有F(y)-G(x)=c\\带入初始条件则有F(y_0)-G(x_0)=c\\整理得F(y)-F(y_0)=G(x)-G(x_0)\\即\int _{y_0}^y\frac{dy}{h(y)}=\int_{x_0}^xg(x)dx
 $$ <br>上式即为给定初始条件下的方程特解</p>
-<h4 id="1-4-2-一阶线性方程"><a href="#1-4-2-一阶线性方程" class="headerlink" title="1.4.2 一阶线性方程"></a>1.4.2 一阶线性方程</h4><p>若有：<br>$$<br>\frac{dy}{dx}+P(x)y=Q(x)<br>$$<br>则上述方程称为一阶线性方程，Q(x)称为<strong>自由项</strong>，采用<strong>常数变异法</strong>求解</p>
+<h4 id="1-4-2-线性方程"><a href="#1-4-2-线性方程" class="headerlink" title="1.4.2 线性方程"></a>1.4.2 线性方程</h4><p>若有：<br>$$<br>\frac{dy}{dx}+P(x)y=Q(x)<br>$$<br>则上述方程称为一阶线性方程，Q(x)称为<strong>自由项</strong>，采用<strong>常数变异法</strong>求解</p>
 <p><em>Q(x)</em>=0的一阶方程:<br>$$<br>\frac{dy}{dx}+P(x)y=0<br>$$<br>称为一阶线性齐次方程</p>
 <p>先考虑齐次方程的解，采用1.4.1中的分离变量法可得到其通解：<br>$$<br>y=ce^{-\int P(x)dx}<br>$$<br>接着通过常数变异，求解一阶线性方程的通解：<br>$$ 
 设y=c(x)e^{-\int P(x)dx}为方程的解，其中c(x)为待定系数，带入方程有\\c'(x)e^{-\int P(x)dx}-c(x)P(x)e^{-\int P(x)dx}+P(x)e^{-\int P(x)dx}=Q(x)\\\Rightarrow c'(x)=Q(x)e^{\int P(x)dx}\\\Rightarrow c(x)=\int Q(x)e^{\int P(x)dx}dx+c\\所以，一阶方程的通解为\\y=e^{-\int P(x)dx}\left( c+\int Q(x)e^{\int P(x)dx}dx\right)
