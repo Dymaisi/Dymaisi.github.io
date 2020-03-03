@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">archive_a | KAFSK</title>
+  <title itemprop="name">微分方程学习笔记（1） | KAFSK</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -383,107 +383,159 @@
   </div>
 </header>
 
-      <div class="blank" style="padding-top: 75px;">
-</div>
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
+
 <div id="content" class="site-content">
-  <div id="main">
-    <header class="page-header">
-      <h1 class="cat-title">
-      归档</h1>
-      <span class="cat-des">
-        <p>
-        Archives</p>
-      </span>
-    </header>
-    <div id="main-part">
-      <article class="art">
-        <div class="art-main">
-          <div class="art-content">
-            <div id="archives">
-              <p style="text-align:right;">
-                [<span id="al_expand_collapse" style="cursor: s-resize;">
-                全部展开/收缩</span>
-              ]</p>
-              
-              
-              
-              
-              
-                
-                <h3 class="al_year">2020年</h3>
-              
-              
-                
-                <ul class="al_mon_list">
-                  <li class="al_li">
-                    <span class="al_mon" style="cursor: s-resize;">
-                      03月(<span id="post-num">
-                      3</span>
-                    篇文章)</span>
-                    <ul class="al_post_list" style="">
-              
-                      <li>
-                        <a href="/2020/03/03/微分方程学习笔记（1）/">
-                          <span style="color:#0bf;">
-                          03日21:38:00</span>
-                          微分方程学习笔记（1）
-                        </a>
-                      </li>
-                      
-              
-              
-              
-              
-              
-                      <li>
-                        <a href="/2020/03/01/数据结构与算法学习笔记（1）/">
-                          <span style="color:#0bf;">
-                          01日00:00:00</span>
-                          数据结构与算法学习笔记（1）
-                        </a>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                </ul>
-              
-              
-              
-              
-              
-                
-                <h3 class="al_year">2018年</h3>
-              
-              
-                
-                <ul class="al_mon_list">
-                  <li class="al_li">
-                    <span class="al_mon" style="cursor: s-resize;">
-                      12月(<span id="post-num">
-                      3</span>
-                    篇文章)</span>
-                    <ul class="al_post_list" style="">
-              
-                      <li>
-                        <a href="/2018/12/12/Hexo-Theme-Sakura/">
-                          <span style="color:#0bf;">
-                          12日22:16:01</span>
-                          Hexo-Theme-Sakura
-                        </a>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                </ul>
-              
-              
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+          <header class="entry-header">
+            <h1 class="entry-title">微分方程学习笔记（1）</h1>
+            <p class="entry-census">&nbsp;·&nbsp;2020-3-3&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
+
+            <hr>
+          </header>
+        
+        <div class="entry-content">
+          <h3 id="1-1-微分方程的概念"><a href="#1-1-微分方程的概念" class="headerlink" title="1.1 微分方程的概念"></a>1.1 微分方程的概念</h3><p>微分方程：含有未知函数及其导数的等式</p>
+<p>常微分方程：未知函数是一元函数的微分方程</p>
+<p>偏微分方程：未知函数是多元函数的微分方程</p>
+<p>微分方程的阶：在一微分方程中，出现未知导数的最高阶数</p>
+<p>常微分方程的一般形式：<br>$$ 
+F(x,y,\frac{dy}{dx},...,\frac{d^ny}{dx^n})=0
+$$ <br>若上式左端<em>F</em>为<em>y</em>及其各阶导数的一次有理整式，则称之为线性方程；否则，称它为非线性方程</p>
+<h3 id="1-2-微分方程的解"><a href="#1-2-微分方程的解" class="headerlink" title="1.2 微分方程的解"></a>1.2 微分方程的解</h3><p>$$ 
+设y=\varphi(x)在区间I上有n阶导数，若F(x,\varphi(x),\varphi'(x),...,\varphi^{(n)}(x))\equiv0,(\forall x\in I)\\  则称y=\varphi(x)(x\in I)为方程的解
+$$ </p>
+<p>微分方程的通解与特解：含有一些<strong>独立的任意常数</strong>，且<strong>常数的个数与方程的阶数相同</strong>的解称为通解；不含此类常数的解为特解。</p>
+<p>微分方程解的图形称为微分方程的<strong>解曲线</strong>或<strong>积分曲线</strong></p>
+<p>通解是一族微分方程解曲线，即构成解曲线族</p>
+<p><strong>通解不一定是方程的全部解</strong></p>
+<h3 id="1-3-初值问题"><a href="#1-3-初值问题" class="headerlink" title="1.3 初值问题"></a>1.3 初值问题</h3><p>一般地 , 从通解中确定任意常数的取值而得到特解的条件称为<strong>定解条件</strong></p>
+<p>给出不同的定解条件就产生不同的问题</p>
+<p>常微分方程的<strong>初值问题</strong> [或称<strong>柯西(Cauchy)问题</strong>]:<br>$$ 
+\begin{cases}
+    y^{(n)}=f(x,y',...,y^{(n-1)}),&(1)\\  
+    y(x_0)=y_0,y'(x_0)=y_1,...,y^{(n-1)}(x_0)=y_{n-1},&(2)\\  
+\end{cases}\\  
+定解条件(2)中的x_0称为初始点，y_0,y_1,...,y_{n-1}称为初始值，(2)称为初始条件
+$$ </p>
+<h3 id="1-4-一阶微分方程"><a href="#1-4-一阶微分方程" class="headerlink" title="1.4 一阶微分方程"></a>1.4 一阶微分方程</h3><p>一阶方程的基本形式：<br>$$ 
+\frac{dy}{dx}=f(x,y)\\或P(x,y)dx+Q(x,y)=0
+$$ </p>
+<h4 id="1-4-1-可分离变量的方程"><a href="#1-4-1-可分离变量的方程" class="headerlink" title="1.4.1 可分离变量的方程"></a>1.4.1 可分离变量的方程</h4><p>若有：<br>$$<br>\frac{dy}{dx}=g(x)h(y)<br>$$<br>则上述方程称为可分离变量的方程,采用<strong>分离变量法</strong>求解<br>$$ 
+如果y=a使h(a)=0，则y=a是原方程的解\\ 如果h(y)\neq 0，则经分离变量，等号两边同时积分可得\\ \int\frac{dy}{h(y)}=\int g(x)dx+c(c为任意常数)
+$$ <br>由上式确定隐函数:<br>$$<br>y=(x,c)<br>$$<br>此即为原方程的通解</p>
+<p>需要注意，<strong>方程的通解不一定就是方程的全部解</strong></p>
+<p>进一步考虑初始问题：<br>$$ 
+\begin{cases}\frac{dy}{dx}=g(x)h(y)\\ y(x_0)=y_0\end{cases}
+$$ </p>
+<p>$$ 
+记F(y)=\int\frac{dy}{h(y)},记G(x)=\int\frac{dy}{h(y)}\\则有F(y)-G(x)=c\\带入初始条件则有F(y_0)-G(x_0)=c\\整理得F(y)-F(y_0)=G(x)-G(x_0)\\即\int _{y_0}^y\frac{dy}{h(y)}=\int_{x_0}^xg(x)dx
+$$ <br>上式即为给定初始条件下的方程特解</p>
+<h4 id="1-4-2-一阶线性方程"><a href="#1-4-2-一阶线性方程" class="headerlink" title="1.4.2 一阶线性方程"></a>1.4.2 一阶线性方程</h4><p>若有：<br>$$<br>\frac{dy}{dx}+P(x)y=Q(x)<br>$$<br>则上述方程称为一阶线性方程，Q(x)称为<strong>自由项</strong>，采用<strong>常数变异法</strong>求解</p>
+<p><em>Q(x)</em>=0的一阶方程:<br>$$<br>\frac{dy}{dx}+P(x)y=0<br>$$<br>称为一阶线性齐次方程</p>
+<p>先考虑齐次方程的解，采用1.4.1中的分离变量法可得到其通解：<br>$$<br>y=ce^{-\int P(x)dx}<br>$$<br>接着通过常数变异，求解一阶线性方程的通解：<br>$$ 
+设y=c(x)e^{-\int P(x)dx}为方程的解，其中c(x)为待定系数，带入方程有\\c'(x)e^{-\int P(x)dx}-c(x)P(x)e^{-\int P(x)dx}+P(x)e^{-\int P(x)dx}=Q(x)\\\Rightarrow c'(x)=Q(x)e^{\int P(x)dx}\\\Rightarrow c(x)=\int Q(x)e^{\int P(x)dx}dx+c\\所以，一阶方程的通解为\\y=e^{-\int P(x)dx}\left( c+\int Q(x)e^{\int P(x)dx}dx\right)
+$$ <br>上式中的<em>x,y</em>在实际问题中可以互换</p>
+<p>在实际问题中，给定初始条件可以求出<em>c</em>值，求出特解</p>
+<h4 id="1-4-3-齐次型方程"><a href="#1-4-3-齐次型方程" class="headerlink" title="1.4.3 齐次型方程"></a>1.4.3 齐次型方程</h4><p>$$ 
+如果f(x,y)满足：对任意t\in R\\f(tx,ty)=f(x,y)\\
+$$ </p>
+<p>则称方程：<br>$$<br>\frac{dy}{dx}=f(x,y)<br>$$<br>为一阶齐次型方程，<strong>可化为可分离变量的方程</strong><br>$$ 
+令t=\frac{1}{x}，则f(x,y)=f(1,\frac{y}{x})=\varphi(\frac{y}{x})\\原方程可表示为\frac{dy}{dx}=\varphi(\frac{y}{x})\\令u=\frac{y}{x}\Rightarrow y=xu \Rightarrow \frac{dy}{dx}=u+\frac{du}{dx} ，代入上式有\\u+\frac{du}{dx}=\varphi(u)\\\Rightarrow\frac{du}{dx}=\frac{\varphi(u)-u}{x}
+$$ <br>上式是关于<em>u,x</em>的一阶可分离变量的方程，参照1.4.1求解</p>
+<p>特别地，对于形如<br>$$<br>\frac{dy}{dx}=\frac{x\pm y+a}{x\pm y+b}<br>$$<br>的方程，我们可以化为齐次方程求解<br>$$ 
+令x=X+h,y=Y+k,其中h,k为待定常数,则\frac{dy}{dx}=\frac{dY}{dX}，带入原方程\\得\frac{dY}{dX}=\frac{X\pm Y+(h\pm k+a)}{X\pm Y+(h\pm k+b)}(*)\\令\begin{cases}h\pm k+a=0\\h\pm k+b=0\end{cases}解得h,k
+$$ <br>(*)式即为一阶齐次方程</p>
+<h4 id="1-4-4-伯努利方程"><a href="#1-4-4-伯努利方程" class="headerlink" title="1.4.4 伯努利方程"></a>1.4.4 伯努利方程</h4><p>若有：<br>$$<br>\frac{dy}{dx}+P(x)y=Q(x)y^n,n\in R,n\neq0,1,Q(x)\neq0<br>$$<br>则上式称为伯努利方程，<strong>可化为一阶线性方程</strong><br>$$ 
+在伯努利方程两边同乘y^{-n}得到\\y^{-n}\frac{dy}{dx}+P(c)y^{1-n}=Q(x)\\\Rightarrow\frac{1}{1-n}\frac{d(y^{1-n})}{dx}+P(x)y^{1-n}=Q(x)\\令u=y^{1-n}，则方程变形为\\\frac{du}{dx}+(1-n)P(x)u=(1-n)Q(x)
+$$ <br>上式是关于<em>u</em>的一阶线性方程，参照1.4.2求解</p>
+
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/Dymaisi/CDN@1.2/img/custom/donate/AliPayQR.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/Dymaisi/CDN@1.2/img/custom/donate/WeChanQR.jpg"></li>
+              </ul>
             </div>
           </div>
         </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
       </article>
-    </div>
-  </div>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/2020/03/01/数据结构与算法学习笔记（1）/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                数据结构与算法学习笔记（1）</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz",
+        appKey: "mgOpfzbkHYqU92CV4IDlAUHQ",
+        path: window.location.pathname,
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
+  }
+</script>
+
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <a href="" class="profile gravatar"><img src="" itemprop="image" alt="" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="" itemprop="url" rel="author"></a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i></p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
+
+
 
     </div>    
     <div class="ins-search">
