@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">微分方程学习笔记（1） | KAFSK</title>
+  <title itemprop="name">微分方程学习笔记 | KAFSK</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -395,14 +395,14 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
           <header class="entry-header">
-            <h1 class="entry-title">微分方程学习笔记（1）</h1>
-            <p class="entry-census">&nbsp;·&nbsp;2020-3-3&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
+            <h1 class="entry-title">微分方程学习笔记</h1>
+            <p class="entry-census">&nbsp;·&nbsp;2020-3-4&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
 
             <hr>
           </header>
         
         <div class="entry-content">
-          <h3 id="1-1-微分方程的概念"><a href="#1-1-微分方程的概念" class="headerlink" title="1.1 微分方程的概念"></a>1.1 微分方程的概念</h3><ul>
+          <h2 id="1-微分方程的概念和一阶微分方程"><a href="#1-微分方程的概念和一阶微分方程" class="headerlink" title="1 微分方程的概念和一阶微分方程"></a>1 微分方程的概念和一阶微分方程</h2><h3 id="1-1-微分方程的概念"><a href="#1-1-微分方程的概念" class="headerlink" title="1.1 微分方程的概念"></a>1.1 微分方程的概念</h3><ul>
 <li><p>微分方程：含有未知函数及其导数的等式</p>
 </li>
 <li><p>常微分方程：未知函数是一元函数的微分方程</p>
@@ -456,9 +456,7 @@ $$ </p>
 <p>记\(F(y)=\int\frac{dy}{h(y)}\),记\(G(x)=\int\frac{dy}{h(y)}\)</p>
 <p>则有\(F(y)-G(x)=c\)</p>
 <p>带入初始条件则有\(F(y_0)-G(x_0)=c\)</p>
-<p>整理得\(F(y)-F(y_0)=G(x)-G(x_0)\)，即<br>$$ 
-\int _{y_0}^y\frac{dy}{h(y)}=\int_{x_0}^xg(x)dx
-$$ <br>上式即为给定初始条件下的方程特解</p>
+<p>整理得\(F(y)-F(y_0)=G(x)-G(x_0)\)，即<br>$$<br>\int _{y_0}^y\frac{dy}{h(y)}=\int_{x_0}^xg(x)dx<br>$$<br>上式即为给定初始条件下的方程特解</p>
 <h4 id="1-4-2-线性方程"><a href="#1-4-2-线性方程" class="headerlink" title="1.4.2 线性方程"></a>1.4.2 线性方程</h4><p>若有：<br>$$<br>\frac{dy}{dx}+P(x)y=Q(x)<br>$$<br>则上述方程称为一阶线性方程，<em>Q(x)</em>称为<strong>自由项</strong>，采用<strong>常数变异法</strong>求解</p>
 <p><em>Q(x)</em>=0的一阶方程:<br>$$<br>\frac{dy}{dx}+P(x)y=0<br>$$<br>称为一阶线性齐次方程</p>
 <p>先考虑齐次方程的解，采用1.4.1中的分离变量法可得到其通解：<br>$$<br>y=ce^{-\int P(x)dx}<br>$$<br>接着通过常数变异，求解一阶线性方程的通解</p>
@@ -499,7 +497,27 @@ $$ <br>(*)式即为一阶齐次方程</p>
 &\Rightarrow\frac{1}{1-n}\frac{d(y^{1-n})}{dx}+P(x)y^{1-n}=Q(x)\\
 \end{align}
 $$ <br>令\(y^{1-n}=u\),有<br>$$<br>\frac{du}{dx}+(1-n)P(x)u=(1-n)Q(x)<br>$$<br>上式是关于<em>u</em>的一阶线性方程，参照1.4.2求解</p>
-
+<h2 id="2-二阶及高阶微分方程"><a href="#2-二阶及高阶微分方程" class="headerlink" title="2 二阶及高阶微分方程"></a>2 二阶及高阶微分方程</h2><h3 id="2-1-可降阶的高阶方程"><a href="#2-1-可降阶的高阶方程" class="headerlink" title="2.1 可降阶的高阶方程"></a>2.1 可降阶的高阶方程</h3><h4 id="2-1-1-形如-y-n-f-x-的方程"><a href="#2-1-1-形如-y-n-f-x-的方程" class="headerlink" title="2.1.1 形如\(y^{(n)}=f(x)\)的方程"></a>2.1.1 形如\(y^{(n)}=f(x)\)的方程</h4><p>对此类方程，若存在\(F^{(n)}(x)=f(x)\)</p>
+<p>则对两边同时求n次积分即可得通解：<br>$$<br>y=\underbrace{\iiint…\int}_{n} f(x)=F(x)\<br>$$</p>
+<h4 id="2-1-2-二阶可降阶方程"><a href="#2-1-2-二阶可降阶方程" class="headerlink" title="2.1.2 二阶可降阶方程"></a>2.1.2 二阶可降阶方程</h4><p>二阶方程的一般形式：\(y’’=f(x,y,y’)\)</p>
+<h5 id="（1）不含因变量的二阶方程"><a href="#（1）不含因变量的二阶方程" class="headerlink" title="（1）不含因变量的二阶方程"></a>（1）不含因变量的二阶方程</h5><p>$$<br>y’’=f(x,y’)<br>$$</p>
+<p>令\(y’=p\)，则\(y’’=p’\)，代入上式可化为一阶方程求解：<br>$$<br>\frac{dp}{dx}=f(x,p)<br>$$</p>
+<h5 id="（2）不含自变量的二阶方程"><a href="#（2）不含自变量的二阶方程" class="headerlink" title="（2）不含自变量的二阶方程"></a>（2）不含自变量的二阶方程</h5><p>$$<br>y’’=f(y,y’)<br>$$</p>
+<p>令\(y’=p\)，则\(y’’=\frac{dp}{dx}=\frac{dp}{dy}·\frac{dy}{dx}=p\frac{dp}{dy}\)</p>
+<p>代入上式可化为一阶方程求解：<br>$$<br>y\frac{dp}{dy}=f(y,p)<br>$$</p>
+<h5 id="（3）已知特解的二阶方程"><a href="#（3）已知特解的二阶方程" class="headerlink" title="（3）已知特解的二阶方程"></a>（3）已知特解的二阶方程</h5><p>若已知二阶线性微分方程<br>$$<br>y’’+P(x)y’+Q(x)y=0<br>$$<br>的一个非零特解\(\varphi(x)\)，且\(P(x),Q(x)\)连续，则可以通过变换\(y=\varphi(x)z\)，求该方程的通解</p>
+<p>由\(y=\varphi(x)z\)，知：<br>$$ 
+y'=\varphi(x)z+\varphi(x)z'\\
+y''=\varphi''(x)z+2\varphi'(x)z'+\varphi(x)z''
+$$ <br>代入方程有：<br>$$ 
+\begin{align}
+&\varphi(x)z''+[2\varphi'(x)+P(x)\varphi(x)]z'+[\varphi''(x)+P(x)\varphi'(x)+Q(x)\varphi(x)]z=0\\
+&即z''+\left[\frac{2\varphi'(x)}{\varphi(x)}+P(x)\right]z'=0
+\end{align}
+$$ </p>
+<p>上式即为(2)中的不含自变量的方程，令\(z’=p\)，则\(z’’=\frac{dp}{dx}\)，方程可转化为关于<em>p</em>自由项为0的一阶线性方程</p>
+<p>套用1.4.2中的通解公式可以解得：<br>$$<br>p=c_1e^{-\int(\frac{2\varphi’(x)}{\varphi(x)}+P(x))dx}=c_1e^{-2\ln|\varphi(x)|-\int P(x)dx}=\frac{c_1}{\varphi^2(x)}e^{-\int P(x)dx}<br>$$<br>所以有：<br>$$<br>z’=\frac{c_1}{\varphi^2(x)}e^{-\int P(x)dx},z=\int\frac{c_1}{\varphi^2(x)}e^{-\int P(x)dx}<br>$$<br>所以原方程的通解为：<br>$$<br>y=c_1\varphi(x)\int\frac{1}{\varphi^2(x)}e^{-\int P(x)dx}dx+c_2\varphi(x)<br>$$</p>
+<h3 id="2-2-线性微分方程"><a href="#2-2-线性微分方程" class="headerlink" title="2.2 线性微分方程"></a>2.2 线性微分方程</h3><h2 id="3-微分方程的应用"><a href="#3-微分方程的应用" class="headerlink" title="3 微分方程的应用"></a>3 微分方程的应用</h2>
         </div>
         <!-- .entry-content -->
         <div class="single-reward">
@@ -527,26 +545,9 @@ $$ <br>令\(y^{1-n}=u\),有<br>$$<br>\frac{du}{dx}+(1-n)P(x)u=(1-n)Q(x)<br>$$<br
       <div class="toc" style="background: none;"></div>
       <section class="post-squares nextprev">
         
-          
-            <div class="post-nepre half previous">
-          
-            <a href="/2020/03/03/微分方程学习笔记（2）/" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                微分方程学习笔记（2）</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
         
           
-            <div class="post-nepre half next">
+            <div class="post-nepre full next">
           
             <a href="/2020/03/01/数据结构与算法学习笔记（1）/" rel="next">
               <div class="background">

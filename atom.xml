@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2020-03-03T15:04:20.637Z</updated>
+  <updated>2020-03-04T13:54:22.330Z</updated>
   <id>/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>微分方程学习笔记（2）</title>
-    <link href="/2020/03/03/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%882%EF%BC%89/"/>
-    <id>/2020/03/03/微分方程学习笔记（2）/</id>
-    <published>2020-03-03T15:04:00.000Z</published>
-    <updated>2020-03-03T15:04:20.637Z</updated>
+    <title>微分方程学习笔记</title>
+    <link href="/2020/03/04/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>/2020/03/04/微分方程学习笔记/</id>
+    <published>2020-03-04T13:35:00.000Z</published>
+    <updated>2020-03-04T13:54:22.330Z</updated>
     
     <summary type="html">
     
@@ -29,29 +29,7 @@
       
         
         
-          &lt;h3 id=&quot;2-1-可降阶的高阶方程&quot;&gt;&lt;a href=&quot;#2-1-可降阶的高阶方程&quot; class=&quot;headerlink&quot; title=&quot;2.1 可降阶的高阶方程&quot;&gt;&lt;/a&gt;2.1 可降阶的高阶方程&lt;/h3&gt;&lt;h4 id=&quot;2-1-1-形如-y-n-f-x-的方程&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>微分方程学习笔记（1）</title>
-    <link href="/2020/03/03/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89/"/>
-    <id>/2020/03/03/微分方程学习笔记（1）/</id>
-    <published>2020-03-03T13:38:00.000Z</published>
-    <updated>2020-03-03T16:18:02.117Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;1-1-微分方程的概念&quot;&gt;&lt;a href=&quot;#1-1-微分方程的概念&quot; class=&quot;headerlink&quot; title=&quot;1.1 微分方程的概念&quot;&gt;&lt;/a&gt;1.1
+          &lt;h2 id=&quot;1-微分方程的概念和一阶微分方程&quot;&gt;&lt;a href=&quot;#1-微分方程的概念和一阶微分方程&quot; class=&quot;headerlink&quot; title=&quot;1 微分方程的概念和一阶微分方程&quot;&gt;&lt;/a&gt;1 微分方程的概念和一阶微分方程&lt;/h2&gt;&lt;h3
         
       
     
