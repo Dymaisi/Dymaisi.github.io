@@ -517,7 +517,118 @@ $$ <br>代入方程有：<br>$$
 $$ </p>
 <p>上式即为(2)中的不含自变量的方程，令\(z’=p\)，则\(z’’=\frac{dp}{dx}\)，方程可转化为关于<em>p</em>自由项为0的一阶线性方程</p>
 <p>套用1.4.2中的通解公式可以解得：<br>$$<br>p=c_1e^{-\int(\frac{2\varphi’(x)}{\varphi(x)}+P(x))dx}=c_1e^{-2\ln|\varphi(x)|-\int P(x)dx}=\frac{c_1}{\varphi^2(x)}e^{-\int P(x)dx}<br>$$<br>所以有：<br>$$<br>z’=\frac{c_1}{\varphi^2(x)}e^{-\int P(x)dx},z=\int\frac{c_1}{\varphi^2(x)}e^{-\int P(x)dx}<br>$$<br>所以原方程的通解为：<br>$$<br>y=c_1\varphi(x)\int\frac{1}{\varphi^2(x)}e^{-\int P(x)dx}dx+c_2\varphi(x)<br>$$</p>
-<h3 id="2-2-线性微分方程"><a href="#2-2-线性微分方程" class="headerlink" title="2.2 线性微分方程"></a>2.2 线性微分方程</h3><h2 id="3-微分方程的应用"><a href="#3-微分方程的应用" class="headerlink" title="3 微分方程的应用"></a>3 微分方程的应用</h2>
+<h3 id="2-2-二阶线性微分方程"><a href="#2-2-二阶线性微分方程" class="headerlink" title="2.2 二阶线性微分方程"></a>2.2 二阶线性微分方程</h3><h4 id="2-2-1-齐次方程解的结构"><a href="#2-2-1-齐次方程解的结构" class="headerlink" title="2.2.1 齐次方程解的结构"></a>2.2.1 齐次方程解的结构</h4><p>我们将方程：<br>$$<br>y’’+P(x)y’+Q(x)y=R(x)\text{}…….(1)<br>$$<br>称为<strong>二阶线性微分方程</strong>，若\(R(x)\neq0\)，则成为称为<strong>二阶线性非齐次微分方程</strong></p>
+<p>若\(R(x)=0\)，则方程<br>$$<br>y’’+P(x)y’+Q(x)y=0\text{}…….(2)<br>$$<br>称为<strong>二阶线性齐次微分方程</strong></p>
+<h5 id="（1）初值问题的存在唯一性定理"><a href="#（1）初值问题的存在唯一性定理" class="headerlink" title="（1）初值问题的存在唯一性定理"></a>（1）初值问题的存在唯一性定理</h5><p>如果\(R(x),Q(x),R(x)\)在[a,b]上连续，则对任意\(x_0\in (a,b)\)及任意的\(y_0,y_1\in R\)，方程(1)在[a,b]上存在<strong>唯一解</strong>\(y=y(x)\)使之满足<br>$$<br>y(x_0)=y_0,y’(x_0)=y_1<br>$$<br>也就是说，<strong>上述初始条件唯一确定方程(1)的解</strong></p>
+<h5 id="（2）线性相关"><a href="#（2）线性相关" class="headerlink" title="（2）线性相关"></a>（2）线性相关</h5><p>对于[a,b]上的两个函数\(y_1(x),y_2(x)\)，若其中之一是另一个的常数倍 , 即存在常数L使得<br>$$<br>y_1(x)=Ly_2(x)<br>$$<br>则称函数\(y_1(x),y_2(x)\)在[a,b]上<strong>线性相关</strong>，反之则两者线性无关</p>
+<p>类似地，n阶条件下的线性相关定义为</p>
+<p>对于[a,b]上的n个函数\(y_1(x),y_2(x),…,y_n(x)\)，如果存在n个不全为0的常数\(k_1,k_2,…k_n\)，使在[a,b]上有<br>$$<br>k_1y_1(x)+k_2y_2(x)+…+k_ny_n(x)=0<br>$$<br>则称这n个函数\(y_1(x),y_2(x),…,y_n(x)\)在[a,b]上<strong>线性相关</strong>，反之则是线性无关</p>
+<h5 id="（3）齐次方程解的叠加性（线性性质）"><a href="#（3）齐次方程解的叠加性（线性性质）" class="headerlink" title="（3）齐次方程解的叠加性（线性性质）"></a>（3）齐次方程解的叠加性（线性性质）</h5><p>如果函数\(y_1(x),y_2(x)\)是齐次方程(2)的解，则对任意常数\(c_1,c_2\in R\)<br>$$<br>y(x)=c_1y_1(x)+c_2y_2(x)<br>$$<br>也是方程(2)的解</p>
+<h5 id="（4）齐次方程的通解"><a href="#（4）齐次方程的通解" class="headerlink" title="（4）齐次方程的通解"></a>（4）齐次方程的通解</h5><p>如果函数\(y_1(x),y_2(x)\)是齐次方程(2)在[a,b]上的任意两个<strong>线性无关</strong>的的解，则(3)中给出的<br>$$<br>y(x)=c_1y_1(x)+c_2y_2(x)<br>$$<br>是方程(2)在[a,b]上的通解</p>
+<h5 id="（5）朗斯基行列式"><a href="#（5）朗斯基行列式" class="headerlink" title="（5）朗斯基行列式"></a>（5）朗斯基行列式</h5><p>我们把函数<br>$$ 
+w=w(x)=w(y_1,y_2)=\left|
+	\begin{matrix}
+		y_1(x) & y_1'(x)\\
+		y_2(x) & y_2'(x)\\
+	\end{matrix}
+\right|
+$$ <br>称为函数\(y_1(x),y_2(x)\)的<strong>朗斯基行列式<em>(Wronskian)</em></strong></p>
+<h5 id="（6）引理"><a href="#（6）引理" class="headerlink" title="（6）引理"></a>（6）引理</h5><p>如果\(y_1(x),y_2(x)\)是齐次方程(2)在[a,b]上的任意两个解，则\(w(y_1,y_2)\)在[a,b]上或恒等于0，或恒不等于0，同时可以证明<br>$$<br>y_1(x),y_2(x)在[a,b]上线性相关\Leftrightarrow w(x)\equiv0,x\in [a,b]<br>$$</p>
+<h5 id="（7）齐次方程的解的结构"><a href="#（7）齐次方程的解的结构" class="headerlink" title="（7）齐次方程的解的结构"></a>（7）齐次方程的解的结构</h5><p>如果函数\(y_1(x),y_2(x)\)是齐次方程(2)在[a,b]上的任意两个<strong>线性无关</strong>的的解，则<br>$$<br>y(x)=c_1y_1(x)+c_2y_2(x)<br>$$<br>包含了方程(2)的<strong>所有解</strong></p>
+<h5 id="（6）（推广）n阶线性齐次方程解的结构"><a href="#（6）（推广）n阶线性齐次方程解的结构" class="headerlink" title="（6）（推广）n阶线性齐次方程解的结构"></a>（6）（推广）n阶线性齐次方程解的结构</h5><p>上述结构可以类似地推广到n阶线性齐次方程<br>$$<br>y^{(n)}+a_1(x)y^{(n-1)}+…+a_{n-1}(x)y’+a_n(x)y=0<br>$$<br>如果函数\(y_1(x),y_2(x),…,y_n(x)\)是齐次方程(2)在[a,b]上的任意n个线性无关的的解，则<br>$$<br>y(x)=c_1y_1(x)+c_2y_2(x)+…c_ny_n(x)<br>$$<br>是上述方程的通解，且包含了所有解</p>
+<h4 id="2-2-2-非齐次方程解的结构"><a href="#2-2-2-非齐次方程解的结构" class="headerlink" title="2.2.2 非齐次方程解的结构"></a>2.2.2 非齐次方程解的结构</h4><p>对于非齐次方程方程(1)<br>$$<br>y’’+P(x)y’+Q(x)y=R(x)<br>$$</p>
+<h5 id="（1）性质"><a href="#（1）性质" class="headerlink" title="（1）性质"></a>（1）性质</h5><p>如果\(\overline y(x)\)是非齐次方程(1)在[a,b]上的任一特解，\(y(x)\)是(1)在[a,b]上的任一解，则\(y(x)-\overline y(x)\)是齐次方程(2)在[a,b]上的解</p>
+<h5 id="（2）非齐次方程解的结构"><a href="#（2）非齐次方程解的结构" class="headerlink" title="（2）非齐次方程解的结构"></a>（2）非齐次方程解的结构</h5><p>如果函数\(y_1(x),y_2(x)\)是方程(1)对应齐次方程(2)在[a,b]上的任意两个线性无关的的解，\(\overline y(x)\)是方程(1)在[a,b]上的任一解，由上述性质可知方程(1)的通解（此时也是所有解）可表示为<br>$$<br>y(x)=\overline y(x)+c_1y_1(x)+c_2y_2(x)<br>$$</p>
+<h5 id="（3）非齐次方程解的叠加原理"><a href="#（3）非齐次方程解的叠加原理" class="headerlink" title="（3）非齐次方程解的叠加原理"></a>（3）非齐次方程解的叠加原理</h5><p>如果函数\(y_1(x),y_2(x)\)分别是二阶线性非齐次方程<br>$$<br>y’’+P(x)y’+Q(x)y=f_1(x)<br>$$<br>和<br>$$<br>y’’+P(x)y’+Q(x)y=f_2(x)<br>$$<br>的解，那么\(y(x)=y_1(x)+y_2(x)\)是方程<br>$$<br>y’’+P(x)y’+Q(x)y=f_1(x)+f_2(x)<br>$$<br>的解</p>
+<h4 id="2-2-3-常系数方程"><a href="#2-2-3-常系数方程" class="headerlink" title="2.2.3 常系数方程"></a>2.2.3 常系数方程</h4><p>二阶线性微分方程中若\(P(x)=p,Q(x)=q(p,q为常数)\)，则<br>$$<br>y’’+py’+qy=f(x)\text{}…….(3)<br>$$<br>称为<strong>二阶线性常系数微分方程</strong>，若\(f(x)\neq0\)，则成为称为<strong>二阶线性常系数非齐次微分方程</strong></p>
+<p>若\(f(x)=0\)，则方程<br>$$<br>y’’+py’+qy=0\text{}…….(4)<br>$$<br>称为<strong>二阶线性常系数齐次微分方程</strong></p>
+<h5 id="（1）齐次方程的求解"><a href="#（1）齐次方程的求解" class="headerlink" title="（1）齐次方程的求解"></a>（1）齐次方程的求解</h5><p>设方程(4)有形式\(y=e^{\lambda x}\)的解，代入得<br>$$ 
+\begin{align}
+&\lambda^2e^{\lambda x}+p\lambda e^{\lambda x}+qe^{\lambda x}=0\\
+&即(\lambda^2+p\lambda+q)e^{\lambda x}=0
+\end{align}
+$$ <br>待定常数\(\lambda\)满足方程<br>$$<br>\lambda^2+p\lambda+q=0<br>$$<br>上述方程称为齐次方程(4)的<strong>特征方程</strong>，为求得方程(4)的两个线性无关解，下对特征方程解的情况进行讨论</p>
+<ul>
+<li><p>若特征方程有两不同实根\((p^2-4q&gt;0)\)</p>
+<p>设\(\lambda_1,\lambda_2\)为两实根，易证\(y_1=e^{\lambda_1x},y_2=e^{\lambda_2x}\)是线性无关解</p>
+<p>所以方程(4)的通解为<br>$$<br>y(x)=c_1e^{\lambda_1x}+c_2e^{\lambda_2x}<br>$$</p>
+</li>
+<li><p>若特征方程有两不同复根\((p^2-4q&lt;0)\)</p>
+<p>设\(\lambda_1=a+ib,\lambda_2=a-bi\)为两复根，易证\(y_1=e^{ax}cosbx,y_2=e^{bx}sinbx\)是线性无关解</p>
+<p>所以方程(4)的通解为<br>$$<br>y(x)=c_1e^{ax}cosbx+c_2e^{bx}sinbx<br>$$</p>
+</li>
+<li><p>若特征方程有相等实根\((p^2-4q=0)\)</p>
+<p>设\(\lambda_1=\lambda_2=-\frac{p}{2}\)，于是<br>$$<br>y_1=e^{\lambda_1x}=e^{-\frac{p}{2}x}<br>$$<br>是方程(4)的一解，采用常数变易法，设另一线性无关解为\(y_2(x)=c(x)y_1(x)\)</p>
+<p>可以求得\(c(x)=x\)，所以方程(4)的通解为<br>$$<br>y(x)=c_1e^{\lambda_1x}+c_2xe^{\lambda_1x}=(c_1+c_2x)e^{\lambda_1x}<br>$$</p>
+</li>
+</ul>
+<h5 id="（2）非齐次方程的求解"><a href="#（2）非齐次方程的求解" class="headerlink" title="（2）非齐次方程的求解"></a>（2）非齐次方程的求解</h5><p>对于非齐次方程(3)<br>$$<br>y’’+py’+qy=f(x)<br>$$<br>我们主要考虑以下两种情况的求解</p>
+<p>从非齐次方程解的结构理论知，现在只需讨论求方程(3)的一个特解的方法</p>
+<p><strong>（a）</strong>\(f(x)=e^{\alpha x}P_n(x)，\alpha为实常数，P_n(x)为n次实系数多项式\)</p>
+<p>此时可设方程(3)有形式\(\overline y(x)=e^{\alpha x}Q(x)\)的解，其中\(Q(x)\)是一待定多项式</p>
+<p>代入原方程，整理可得</p>
+<p>$$<br>Q’’(x)+(p+2\alpha)Q’(x)+(\alpha^2+p\alpha+q)Q(x)=P_n(x)\text{}……(5)<br>$$</p>
+<ul>
+<li><p>若\(\alpha\)不是对应特征方程的根</p>
+<p>取<br>$$<br>Q_n(x)=b_0x^n+b_1x^{n-1}+…+b_{n-1}x+b_n<br>$$<br>代入上(5)式确定\(b_0,b_1,…,b_n\)得到特解<br>$$<br>\overline y(x)=e^{\alpha x}Q_n(x)<br>$$</p>
+</li>
+<li><p>若\(\alpha\)是对应特征方程的单根</p>
+<p>为使(5)式左边为n次多项式，可取\(Q(x)=xQ_n(x)\)，代入确定系数得到特解<br>$$<br>\overline y(x)=xe^{\alpha x}Q_n(x)<br>$$</p>
+</li>
+<li><p>若\(\alpha\)是对应特征方程的二重根</p>
+<p>为使(5)式左边为n次多项式，可取\(Q(x)=x^2Q_n(x)\)，代入确定系数得到特解<br>$$<br>\overline y(x)=x^2e^{\alpha x}Q_n(x)<br>$$</p>
+</li>
+</ul>
+<p>综上，可设方程(3)特解为<br>$$ 
+\overline y(x)=x^ke^{\alpha x}Q_n(x)\\
+其中k=\begin{cases}
+  0,\alpha不是特征根\\
+  1,\alpha是单根\\
+  2,\alpha是二重根
+\end{cases}
+$$ <br><strong>（b）</strong>\(f(x)=e^{\alpha x}[P_n(x)cos\beta+P_l(x)sin\beta x]\)</p>
+<p>\(\alpha为实常数，P_n(x)和为P_l(x)分别为n次和l次实系数多项式\)</p>
+<p>此时可设方程(3)特解为<br>$$<br>\overline y(x)=x^ke^{\alpha x}[Q_m(x)cos\beta x+R_m(x)sin\beta x]<br>$$<br>其中\(m=max{n,l}，Q_m(x)，R_m(x)为m次多项式\)<br>$$ 
+k=\begin{cases}
+  0,\alpha+i\beta不是特征方程的根\\
+  1,\alpha-i\beta是特征方程的根
+\end{cases}
+$$ </p>
+<h5 id="（3）n阶线性方程的求解"><a href="#（3）n阶线性方程的求解" class="headerlink" title="（3）n阶线性方程的求解"></a>（3）n阶线性方程的求解</h5><p>类似地，我们可以求解n阶线性常系数微分方程<br>$$<br>y^{(n)}+a_{n-1}(x)y^{(n-1)}+…+a_1(x)y’+a_0(x)y=f(x)<br>$$<br>其通解为<br>$$<br>y(x)=\overline y(x)+y_h(x)<br>$$<br>其中\(\overline y(x)\)为该方程一特解，\(y_h(x)\)为对应齐次方程的通解</p>
+<p>为对应齐次方程的n个线性无关解，可设其有形式\(y(x)=e^{\lambda x}\)的解，代入得特征方程<br>$$<br>\lambda^n+a_{n-1}\lambda^{n-1}+…+a_1\lambda+a_0=0<br>$$</p>
+<ul>
+<li><p>若\(\lambda\)是单重实根 则对应解为\(e^{\lambda x}\)</p>
+</li>
+<li><p>若\(\lambda\)是k重实根 则对应的k个解为\(e^{\lambda x},xe^{\lambda x},…,x^{k-1}e^{\lambda x}\)</p>
+</li>
+<li><p>若\(\lambda\)是单重共轭复根 则对应的两个解为\(e^{\alpha x}cosbx,e^{\alpha x}sinbx\)</p>
+</li>
+<li><p>若\(\lambda\)是k重共轭复根 则对应的2k个解为<br>$$ 
+  e^{\alpha x}cosbx,xe^{\alpha x}cosbx,...,x^{k-1}e^{\alpha x}cosbx\\
+  e^{\alpha x}sinbx,xe^{\alpha x}sinbx,...,x^{k-1}e^{\alpha x}sinbx
+  $$ </p>
+</li>
+</ul>
+<p>于是根据特征方程根的情况，我们可以得到齐次方程的通解</p>
+<h3 id="2-2-4-欧拉方程"><a href="#2-2-4-欧拉方程" class="headerlink" title="2.2.4 欧拉方程"></a>2.2.4 欧拉方程</h3><p>变系数线性微分方程一般不易求解，<strong>欧拉方程<em>(Euler equation)</em></strong>是一种可化为常系数方程的方程<br>$$<br>x^2y’’+axy’+by=f(x)<br>$$<br>上述方程称为二阶欧拉方程，其中<em>a,b</em>为常数</p>
+<p>求解过程如下<br>$$ 
+\begin{align}
+&令x=e^t，则t=\ln x\\
+&y'=\frac{dt}{dx}=\frac{dy}{dt}\frac{dt}{dx}=\frac{1}{x}\frac{dy}{dt}\Rightarrow x\frac{dy}{dx}=\frac{dy}{dt}\\
+&y''=\frac{d^2y}{dx^2}=\frac{dy}{dx}\left(\frac{dy}{dx}\right)=\frac{dy}{dx}\left(\frac{1}{x}\frac{dy}{dt}\right)\\
+&=-\frac{1}{x^2}\frac{dy}{dt}+\frac{1}{x}\frac{dy^2}{dt^2}\frac{dt}{dx}=-\frac{1}{x^2}\frac{dy}{dt}+\frac{1}{x^2}\frac{dy^2}{dt^2}\\
+&\Rightarrow x^2y''=\frac{dy^2}{dt^2}-\frac{dy}{dt}\\
+&代入原方程有\frac{dy^2}{dt^2}+(a-1)\frac{dy}{dt}+by=f(e^t)
+\end{align}
+$$ <br>这是一个二阶线性常系数微分方程</p>
+<p>类似地，我们可以同样处理n阶欧拉方程：<br>$$<br>x^ny^{(n)}+a_1x^{n-1}y^{(n-1)}+…+a_{n-1}xy’+a_ny=f(x)<br>$$<br>同样地，令\(x=e^t\)，用微分算子<em>D</em>表示对<em>t</em>的求导运算，则有<br>$$ 
+\begin{align}
+&xy'=\frac{dy}{dt}=Dy\\
+&x^2y''=\frac{dy^2}{dt^2}-\frac{dy}{dt}=D^2y-Dy=D(D-1)y\\
+&一般地，可证：x^ky^{(k)}=D(D-1)...(D-k+1)y
+\end{align}
+$$ <br>于是n阶欧拉方程可化为常系数方程：<br>$$<br>D(D-1)…(D-n+1)y+a_1D(D-1)…(D-n+2)y+…+a_{n-1}Dy+a_ny=f(e^t)<br>$$</p>
+
         </div>
         <!-- .entry-content -->
         <div class="single-reward">
