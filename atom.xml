@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://github.com/honjun/"/>
+  <link href="https://dymaisi.github.io/"/>
   <updated>2020-11-17T13:48:40.045Z</updated>
-  <id>https://github.com/honjun/</id>
+  <id>https://dymaisi.github.io/</id>
   
   <author>
     <name>Dymaisi</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>不曾存在的头绪</title>
-    <link href="https://github.com/honjun/2020/11/17/test/"/>
-    <id>https://github.com/honjun/2020/11/17/test/</id>
+    <link href="https://dymaisi.github.io/2020/11/17/test/"/>
+    <id>https://dymaisi.github.io/2020/11/17/test/</id>
     <published>2020-11-16T16:00:00.000Z</published>
     <updated>2020-11-17T13:48:40.045Z</updated>
     
@@ -35,17 +35,17 @@
     
     </summary>
     
-      <category term="生活" scheme="https://github.com/honjun/categories/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="https://dymaisi.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="悦读" scheme="https://github.com/honjun/tags/%E6%82%A6%E8%AF%BB/"/>
+      <category term="悦读" scheme="https://dymaisi.github.io/tags/%E6%82%A6%E8%AF%BB/"/>
     
   </entry>
   
   <entry>
     <title>热学</title>
-    <link href="https://github.com/honjun/2020/06/04/%E7%83%AD%E5%AD%A6/"/>
-    <id>https://github.com/honjun/2020/06/04/热学/</id>
+    <link href="https://dymaisi.github.io/2020/06/04/%E7%83%AD%E5%AD%A6/"/>
+    <id>https://dymaisi.github.io/2020/06/04/热学/</id>
     <published>2020-06-03T16:00:00.000Z</published>
     <updated>2020-06-04T08:06:23.724Z</updated>
     
@@ -66,8 +66,8 @@
   
   <entry>
     <title>微分方程学习笔记</title>
-    <link href="https://github.com/honjun/2020/03/04/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://github.com/honjun/2020/03/04/微分方程学习笔记/</id>
+    <link href="https://dymaisi.github.io/2020/03/04/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>https://dymaisi.github.io/2020/03/04/微分方程学习笔记/</id>
     <published>2020-03-04T13:35:00.000Z</published>
     <updated>2020-10-03T16:25:35.049Z</updated>
     
@@ -88,8 +88,8 @@
   
   <entry>
     <title>数据结构与算法学习笔记（1）</title>
-    <link href="https://github.com/honjun/2020/03/01/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89/"/>
-    <id>https://github.com/honjun/2020/03/01/数据结构与算法学习笔记（1）/</id>
+    <link href="https://dymaisi.github.io/2020/03/01/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89/"/>
+    <id>https://dymaisi.github.io/2020/03/01/数据结构与算法学习笔记（1）/</id>
     <published>2020-02-29T16:00:00.000Z</published>
     <updated>2020-03-08T16:16:17.974Z</updated>
     
