@@ -466,7 +466,7 @@
 </ul>
 <p>若一个线性方程组有一个或无穷多个解，则它是<strong>相容的</strong>.</p>
 <p>若一个线性方程组无解，则它是<strong>不相容的</strong>.</p>
-<p>作为例子，我们考虑这样一个方程组：<br>$$<br>\begin{cases}<br>x_1 - 2x_2  +\ \ x_3 =0 \<br>\ \ \ \ \ \ \ \ \ 2x_2 - 8x_3 = 8 \<br>5x_1\ \ \ \ \ \ \ \ \ -5x_3 = 10<br>\end{cases}<br>$$<br>我们可以定义该方程组的<strong>系数矩阵</strong>（3×3）：<br>$$<br>\begin{bmatrix}<br>1 &amp; -2 &amp; 1\\<br>0 &amp; 2 &amp; -8\\<br>0 &amp; 0 &amp; -5<br>\end{bmatrix}<br>$$<br>和<strong>增广矩阵</strong>（3×4）：<br>$$<br>\begin{bmatrix}<br>1 &amp; -2 &amp; 1 &amp; 0\<br>0 &amp; 2 &amp; -8 &amp; 8\<br>0 &amp; 0 &amp; -5 &amp; 10<br>\end{bmatrix}<br>$$<br>解线性方程组的基本思路就是把方程组用一个更容易解的等价方程组代替，而对线性方程组的增广矩阵进行初等行变换可以做到上述替代.</p>
+<p>作为例子，我们考虑这样一个方程组：<br>$$<br>\begin{cases}<br>x_1 - 2x_2  +\ \ x_3 =0 \<br>\ \ \ \ \ \ \ \ \ 2x_2 - 8x_3 = 8 \<br>5x_1\ \ \ \ \ \ \ \ \ -5x_3 = 10<br>\end{cases}<br>$$<br>我们可以定义该方程组的<strong>系数矩阵</strong>（3×3）：<br>$$<br>\begin{bmatrix}<br>1 &amp; -2 &amp; 1\\<br>0 &amp; 2 &amp; -8\\<br>0 &amp; 0 &amp; -5<br>\end{bmatrix}<br>$$<br>和<strong>增广矩阵</strong>（3×4）：<br>$$<br>\begin{bmatrix}<br>1 &amp; -2 &amp; 1 &amp; 0\\<br>0 &amp; 2 &amp; -8 &amp; 8\\<br>0 &amp; 0 &amp; -5 &amp; 10<br>\end{bmatrix}<br>$$<br>解线性方程组的基本思路就是把方程组用一个更容易解的等价方程组代替，而对线性方程组的增广矩阵进行初等行变换可以做到上述替代.</p>
 <p>我们定义<strong>初等行变换</strong>：</p>
 <ul>
 <li>倍加变换：把某一行换成它本身与另一行的倍数的和.</li>
@@ -476,7 +476,7 @@
 <p>行变换是可逆的，如果一个矩阵可以经一系列初等行变换成为另一个矩阵，那么我们称这两个矩阵是<strong>行等价的</strong>.</p>
 <p>所以我们可以得到如下事实：</p>
 <p><strong>若两个线性方程组的增广矩阵是行等价的，则它们有相同的解集.</strong></p>
-<p>于是经过简单的行变换我们可以将给示例方程组的增广矩阵化为<br>$$<br>\begin{bmatrix}<br>1 &amp; 0 &amp; 0 &amp; 1\<br>0 &amp; 1 &amp; 0 &amp; 0\<br>0 &amp; 0 &amp; 1 &amp; -1<br>\end{bmatrix}<br>$$<br>得到原方程的唯一解 $(1,0,-1)$.</p>
+<p>于是经过简单的行变换我们可以将给示例方程组的增广矩阵化为<br>$$<br>\begin{bmatrix}<br>1 &amp; 0 &amp; 0 &amp; 1\\<br>0 &amp; 1 &amp; 0 &amp; 0\\<br>0 &amp; 0 &amp; 1 &amp; -1<br>\end{bmatrix}<br>$$<br>得到原方程的唯一解 $(1,0,-1)$.</p>
 <p>我们主要考虑线性方程组的两个基本问题即<strong>解的存在性和唯一性问题</strong>，这将在后续章节进一步讨论.</p>
 <h3 id="1-2-行化简与阶梯形矩阵"><a href="#1-2-行化简与阶梯形矩阵" class="headerlink" title="1.2 行化简与阶梯形矩阵"></a>1.2 行化简与阶梯形矩阵</h3><h4 id="1-2-1-行化简"><a href="#1-2-1-行化简" class="headerlink" title="1.2.1 行化简"></a>1.2.1 行化简</h4><p>本节将1.1中的方程组解法进一步精化.</p>
 <blockquote>
@@ -492,7 +492,7 @@
 <li>每一先导元素1是该元素所在行的唯一非零元素</li>
 </ul>
 </blockquote>
-<p>例如：<br>$$<br>\begin{bmatrix}<br>2 &amp; -3 &amp; 2 &amp; 1\<br>0 &amp; 1 &amp; -4 &amp; 8\<br>0 &amp; 0 &amp; 0 &amp; 5/2<br>\end{bmatrix}<br>\ \ \ \ \ \<br>\begin{bmatrix}<br>1 &amp; 0 &amp; 0 &amp; 29\<br>0 &amp; 1 &amp; 0 &amp; 16\<br>0 &amp; 0 &amp; 1 &amp; 3<br>\end{bmatrix}<br>$$<br>这两个矩阵都是阶梯形的，而第二个矩阵是简化阶梯形的.</p>
+<p>例如：<br>$$<br>\begin{bmatrix}<br>2 &amp; -3 &amp; 2 &amp; 1\\<br>0 &amp; 1 &amp; -4 &amp; 8\\<br>0 &amp; 0 &amp; 0 &amp; 5/2<br>\end{bmatrix}<br>\ \ \ \ \ \<br>\begin{bmatrix}<br>1 &amp; 0 &amp; 0 &amp; 29\\<br>0 &amp; 1 &amp; 0 &amp; 16\\<br>0 &amp; 0 &amp; 1 &amp; 3<br>\end{bmatrix}<br>$$<br>这两个矩阵都是阶梯形的，而第二个矩阵是简化阶梯形的.</p>
 <p>任何非零矩阵都可以<strong>行化简</strong>（即用初等行变换）变为阶梯形矩阵，但用不同的方法可以化为不同的阶梯形矩阵.</p>
 <p>然而，一个矩阵只能化为唯一的简化阶梯形矩阵. 这个事实我们作为定理给出：</p>
 <blockquote>
@@ -504,21 +504,21 @@
 <p>当一个矩阵经行变换为阶梯形后，考虑到简化阶梯形矩阵的唯一性，再进一步变化为简化阶梯形时，先导元素的位置不会改变.</p>
 <p><strong>定义</strong> 矩阵中的<strong>主元位置</strong>是 $A$ 中对应于它的阶梯形中先导元素1的位置. <strong>主元列</strong>是 $A$ 的含有主元位置的列.</p>
 <p>下面用一个例子给出精化后的行化简算法步骤：</p>
-<p><strong>例</strong>  用初等行变换将下列句子化为简化阶梯形.<br>$$<br>\begin{bmatrix}<br>0 &amp; 3 &amp; -6 &amp; 6 &amp; 4 &amp; -5\<br>3 &amp; -7 &amp; 8 &amp; -5 &amp; 8 &amp; 9\<br>3 &amp; -9 &amp; 12 &amp; -9 &amp;6 &amp;15<br>\end{bmatrix}<br>$$<br><strong>解</strong></p>
+<p><strong>例</strong>  用初等行变换将下列句子化为简化阶梯形.<br>$$<br>\begin{bmatrix}<br>0 &amp; 3 &amp; -6 &amp; 6 &amp; 4 &amp; -5\\<br>3 &amp; -7 &amp; 8 &amp; -5 &amp; 8 &amp; 9\\<br>3 &amp; -9 &amp; 12 &amp; -9 &amp;6 &amp;15<br>\end{bmatrix}<br>$$<br><strong>解</strong></p>
 <ol>
 <li><p>由最左的非零列开始. 这是一个主元列. 主元的位置在该列顶端.</p>
 </li>
 <li><p>在主元列选取一个非零元素作为主元. 若有必要的话，对换两行使这个元素移到主元位置上.、</p>
-<p>这里我们选取第三行第一列的3作为主元，对换一、三行将其移到主元位置.<br>$$<br>\begin{bmatrix}<br>3 &amp; -9 &amp; 12 &amp; -9 &amp;6 &amp;15\<br>3 &amp; -7 &amp; 8 &amp; -5 &amp; 8 &amp; 9\<br>0 &amp; 3 &amp; -6 &amp; 6 &amp; 4 &amp; -5<br>\end{bmatrix}<br>$$</p>
+<p>这里我们选取第三行第一列的3作为主元，对换一、三行将其移到主元位置.<br>$$<br>\begin{bmatrix}<br>3 &amp; -9 &amp; 12 &amp; -9 &amp;6 &amp;15\\<br>3 &amp; -7 &amp; 8 &amp; -5 &amp; 8 &amp; 9\\<br>0 &amp; 3 &amp; -6 &amp; 6 &amp; 4 &amp; -5<br>\end{bmatrix}<br>$$</p>
 </li>
 <li><p>用倍加行变换将主元下方元素变为0.</p>
-<p>第二行加上-1倍的第一行.<br>$$<br>\begin{bmatrix}<br>3 &amp; -9 &amp; 12 &amp; -9 &amp;6 &amp;15\<br>0 &amp; 2 &amp; -4 &amp; 4 &amp; 2 &amp; -6\<br>0 &amp; 3 &amp; -6 &amp; 6 &amp; 4 &amp; -5<br>\end{bmatrix}<br>$$</p>
+<p>第二行加上-1倍的第一行.<br>$$<br>\begin{bmatrix}<br>3 &amp; -9 &amp; 12 &amp; -9 &amp;6 &amp;15\\<br>0 &amp; 2 &amp; -4 &amp; 4 &amp; 2 &amp; -6\\<br>0 &amp; 3 &amp; -6 &amp; 6 &amp; 4 &amp; -5<br>\end{bmatrix}<br>$$</p>
 </li>
 <li><p>暂时不管包含主元位置的行以及它上面的各行，对剩下的子矩阵（类似于行列式中的余子式）使用上述三个步骤直到没有非零行需要处理为止.</p>
-<p>即我们只需考虑如下部分. 我们选取2为主元，重复上述操作.<br>$$<br>\begin{bmatrix}<br>2 &amp; -4 &amp; 4 &amp; 2 &amp; -6\<br>3 &amp; -6 &amp; 6 &amp; 4 &amp; -5<br>\end{bmatrix}<br>$$<br>最终得到<br>$$<br>\begin{bmatrix}<br>3 &amp; -9 &amp; 12 &amp; -9 &amp;6 &amp;15\<br>0 &amp; 2 &amp; -4 &amp; 4 &amp; 2 &amp; -6\<br>0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 4<br>\end{bmatrix}<br>$$</p>
+<p>即我们只需考虑如下部分. 我们选取2为主元，重复上述操作.<br>$$<br>\begin{bmatrix}<br>2 &amp; -4 &amp; 4 &amp; 2 &amp; -6\\<br>3 &amp; -6 &amp; 6 &amp; 4 &amp; -5<br>\end{bmatrix}<br>$$<br>最终得到<br>$$<br>\begin{bmatrix}<br>3 &amp; -9 &amp; 12 &amp; -9 &amp;6 &amp;15\\<br>0 &amp; 2 &amp; -4 &amp; 4 &amp; 2 &amp; -6\\<br>0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 4<br>\end{bmatrix}<br>$$</p>
 </li>
 <li><p>由最右边的主元开始，把每个主元上方的各元素变成0，如果某个主元素不是1，用倍乘变换将它变成1.<br>$$<br>\begin{bmatrix}</p>
-<p>1&amp; 0 &amp; -2 &amp; 3 &amp;0 &amp;-24\<br>0 &amp; 1 &amp; -2 &amp; 2 &amp; 0 &amp; -7\<br>0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 4<br>\end{bmatrix}<br>$$<br>这就是原矩阵的简化阶梯形.</p>
+<p>1&amp; 0 &amp; -2 &amp; 3 &amp;0 &amp;-24\\<br>0 &amp; 1 &amp; -2 &amp; 2 &amp; 0 &amp; -7\\<br>0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 4<br>\end{bmatrix}<br>$$<br>这就是原矩阵的简化阶梯形.</p>
 </li>
 </ol>
 <ul>
@@ -527,7 +527,7 @@
 </ul>
 <h4 id="1-2-2-线性方程的解"><a href="#1-2-2-线性方程的解" class="headerlink" title="1.2.2 线性方程的解"></a>1.2.2 线性方程的解</h4><p>我们将行简化算法应用于方程组的增广矩阵可以得到线性方程组解集的一种显式表示法.</p>
 <p>例如，某个线性方程组的增广矩阵已经化为等价的简化阶梯形：<br>$$<br>\begin{bmatrix}</p>
-<p>1&amp; 0 &amp; -5 &amp; 1\<br>0 &amp; 1 &amp; 1 &amp; 4\<br>0 &amp; 0 &amp; 0 &amp; 0<br>\end{bmatrix}<br>$$<br>对应的线性方程组是<br>$$<br>\begin{cases}<br>x_1 \ \ \ \ \ \ \ \ \ - 5x_3=1 \<br>\ \ \ \ \ \ \ \ \ x_2 + \ \ x_3 = 4 \<br>\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ 0 =0<br>\end{cases}<br>$$<br>我们称对应主元列的变量 $x_1$ 和 $x_2$ 为<strong>基本变量（先导变量）</strong>，其他变量如 $x_3$ 为<strong>自由变量</strong>.</p>
+<p>1&amp; 0 &amp; -5 &amp; 1\\<br>0 &amp; 1 &amp; 1 &amp; 4\\<br>0 &amp; 0 &amp; 0 &amp; 0<br>\end{bmatrix}<br>$$<br>对应的线性方程组是<br>$$ <br>\begin{cases}<br>x_1 \ \ \ \ \ \ \ \ \ - 5x_3=1 \\<br>\ \ \ \ \ \ \ \ \ x_2 + \ \ x_3 = 4 \\<br>\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ 0 =0<br>\end{cases}<br>$$ {% raw %}<br>我们称对应主元列的变量 $x_1$ 和 $x_2$ 为<strong>基本变量（先导变量）</strong>，其他变量如 $x_3$ 为<strong>自由变量</strong>.</p>
 <p>我们可以将基本变量用自由变量表示，这样就得到了线性方程组的显式表示（称为<strong>通解</strong>）.<br>$$<br>\begin{cases}<br>x_1=1+5x_3\<br>x_2=4-x_3\<br>x_3为自由变量<br>\end{cases}<br>$$<br>这种表示也称为解集的<strong>参数表示</strong>. 解方程组就是要求出解集的这种参数表示或确定它无解.（在1.5节中我们将讨论解集的<strong>参数向量形式</strong>，两者紧密相关）</p>
 <p>当方程组是相容的且具有自由变量时，它的解集具有多种参数表示，我们总是约定使用自由变量作为参数表示解集.</p>
 <h4 id="1-2-3-存在性和唯一性问题"><a href="#1-2-3-存在性和唯一性问题" class="headerlink" title="1.2.3 存在性和唯一性问题"></a>1.2.3 存在性和唯一性问题</h4><p>要回答解的存在性和唯一性问题，显然我们只需要考方程组增广矩阵的阶梯形即可.</p>
