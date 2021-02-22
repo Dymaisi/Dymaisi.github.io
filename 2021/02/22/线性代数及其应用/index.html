@@ -466,7 +466,7 @@
 </ul>
 <p>若一个线性方程组有一个或无穷多个解，则它是<strong>相容的</strong>.</p>
 <p>若一个线性方程组无解，则它是<strong>不相容的</strong>.</p>
-<p>作为例子，我们考虑这样一个方程组：<br>$$<br>\begin{cases}<br>x_1 - 2x_2  +\ \ x_3 =0 \<br>\ \ \ \ \ \ \ \ \ 2x_2 - 8x_3 = 8 \<br>5x_1\ \ \ \ \ \ \ \ \ -5x_3 = 10<br>\end{cases}<br>$$<br>我们可以定义该方程组的<strong>系数矩阵</strong>（3×3）：<br>$$<br>\begin{bmatrix}<br>1 &amp; -2 &amp; 1\\<br>0 &amp; 2 &amp; -8\\<br>0 &amp; 0 &amp; -5<br>\end{bmatrix}<br>$$<br>和<strong>增广矩阵</strong>（3×4）：<br>$$<br>\begin{bmatrix}<br>1 &amp; -2 &amp; 1 &amp; 0\\<br>0 &amp; 2 &amp; -8 &amp; 8\\<br>0 &amp; 0 &amp; -5 &amp; 10<br>\end{bmatrix}<br>$$<br>解线性方程组的基本思路就是把方程组用一个更容易解的等价方程组代替，而对线性方程组的增广矩阵进行初等行变换可以做到上述替代.</p>
+<p>作为例子，我们考虑这样一个方程组：<br>$$ <br>\begin{cases}<br>x_1 - 2x_2  +\ \ x_3 =0 \<br>\ \ \ \ \ \ \ \ \ 2x_2 - 8x_3 = 8 \<br>5x_1\ \ \ \ \ \ \ \ \ -5x_3 = 10<br>\end{cases}<br>$$ {%raw%}<br>我们可以定义该方程组的<strong>系数矩阵</strong>（3×3）：<br>$$ {%raw%}<br>\begin{bmatrix}<br>1 &amp; -2 &amp; 1\<br>0 &amp; 2 &amp; -8\<br>0 &amp; 0 &amp; -5<br>\end{bmatrix}<br>$$ {%raw%}<br>和<strong>增广矩阵</strong>（3×4）：<br>$$ {%raw%}<br>\begin{bmatrix}<br>1 &amp; -2 &amp; 1 &amp; 0\<br>0 &amp; 2 &amp; -8 &amp; 8\<br>0 &amp; 0 &amp; -5 &amp; 10<br>\end{bmatrix}<br>$$ {%raw%}<br>解线性方程组的基本思路就是把方程组用一个更容易解的等价方程组代替，而对线性方程组的增广矩阵进行初等行变换可以做到上述替代.</p>
 <p>我们定义<strong>初等行变换</strong>：</p>
 <ul>
 <li>倍加变换：把某一行换成它本身与另一行的倍数的和.</li>
@@ -476,7 +476,7 @@
 <p>行变换是可逆的，如果一个矩阵可以经一系列初等行变换成为另一个矩阵，那么我们称这两个矩阵是<strong>行等价的</strong>.</p>
 <p>所以我们可以得到如下事实：</p>
 <p><strong>若两个线性方程组的增广矩阵是行等价的，则它们有相同的解集.</strong></p>
-<p>于是经过简单的行变换我们可以将给示例方程组的增广矩阵化为<br>$$<br>\begin{bmatrix}<br>1 &amp; 0 &amp; 0 &amp; 1\\<br>0 &amp; 1 &amp; 0 &amp; 0\\<br>0 &amp; 0 &amp; 1 &amp; -1<br>\end{bmatrix}<br>$$<br>得到原方程的唯一解 $(1,0,-1)$.</p>
+<p>于是经过简单的行变换我们可以将给示例方程组的增广矩阵化为<br>$$ {%raw%}<br>\begin{bmatrix}<br>1 &amp; 0 &amp; 0 &amp; 1\<br>0 &amp; 1 &amp; 0 &amp; 0\<br>0 &amp; 0 &amp; 1 &amp; -1<br>\end{bmatrix}<br>$$ {%raw%}<br>得到原方程的唯一解 $(1,0,-1)$.</p>
 <p>我们主要考虑线性方程组的两个基本问题即<strong>解的存在性和唯一性问题</strong>，这将在后续章节进一步讨论.</p>
 <h3 id="1-2-行化简与阶梯形矩阵"><a href="#1-2-行化简与阶梯形矩阵" class="headerlink" title="1.2 行化简与阶梯形矩阵"></a>1.2 行化简与阶梯形矩阵</h3><h4 id="1-2-1-行化简"><a href="#1-2-1-行化简" class="headerlink" title="1.2.1 行化简"></a>1.2.1 行化简</h4><p>本节将1.1中的方程组解法进一步精化.</p>
 <blockquote>
@@ -492,7 +492,7 @@
 <li>每一先导元素1是该元素所在行的唯一非零元素</li>
 </ul>
 </blockquote>
-<p>例如：<br>$$<br>\begin{bmatrix}<br>2 &amp; -3 &amp; 2 &amp; 1\\<br>0 &amp; 1 &amp; -4 &amp; 8\\<br>0 &amp; 0 &amp; 0 &amp; 5/2<br>\end{bmatrix}<br>\ \ \ \ \ \<br>\begin{bmatrix}<br>1 &amp; 0 &amp; 0 &amp; 29\\<br>0 &amp; 1 &amp; 0 &amp; 16\\<br>0 &amp; 0 &amp; 1 &amp; 3<br>\end{bmatrix}<br>$$<br>这两个矩阵都是阶梯形的，而第二个矩阵是简化阶梯形的.</p>
+<p>例如：<br>$$ {%raw%}<br>\begin{bmatrix}<br>2 &amp; -3 &amp; 2 &amp; 1\<br>0 &amp; 1 &amp; -4 &amp; 8\<br>0 &amp; 0 &amp; 0 &amp; 5/2<br>\end{bmatrix}<br>\ \ \ \ \ \<br>\begin{bmatrix}<br>1 &amp; 0 &amp; 0 &amp; 29\<br>0 &amp; 1 &amp; 0 &amp; 16\<br>0 &amp; 0 &amp; 1 &amp; 3<br>\end{bmatrix}<br>$$ {%raw%}<br>这两个矩阵都是阶梯形的，而第二个矩阵是简化阶梯形的.</p>
 <p>任何非零矩阵都可以<strong>行化简</strong>（即用初等行变换）变为阶梯形矩阵，但用不同的方法可以化为不同的阶梯形矩阵.</p>
 <p>然而，一个矩阵只能化为唯一的简化阶梯形矩阵. 这个事实我们作为定理给出：</p>
 <blockquote>
@@ -504,21 +504,21 @@
 <p>当一个矩阵经行变换为阶梯形后，考虑到简化阶梯形矩阵的唯一性，再进一步变化为简化阶梯形时，先导元素的位置不会改变.</p>
 <p><strong>定义</strong> 矩阵中的<strong>主元位置</strong>是 $A$ 中对应于它的阶梯形中先导元素1的位置. <strong>主元列</strong>是 $A$ 的含有主元位置的列.</p>
 <p>下面用一个例子给出精化后的行化简算法步骤：</p>
-<p><strong>例</strong>  用初等行变换将下列句子化为简化阶梯形.<br>$$<br>\begin{bmatrix}<br>0 &amp; 3 &amp; -6 &amp; 6 &amp; 4 &amp; -5\\<br>3 &amp; -7 &amp; 8 &amp; -5 &amp; 8 &amp; 9\\<br>3 &amp; -9 &amp; 12 &amp; -9 &amp;6 &amp;15<br>\end{bmatrix}<br>$$<br><strong>解</strong></p>
+<p><strong>例</strong>  用初等行变换将下列句子化为简化阶梯形.<br>$$ {%raw%}<br>\begin{bmatrix}<br>0 &amp; 3 &amp; -6 &amp; 6 &amp; 4 &amp; -5\<br>3 &amp; -7 &amp; 8 &amp; -5 &amp; 8 &amp; 9\<br>3 &amp; -9 &amp; 12 &amp; -9 &amp;6 &amp;15<br>\end{bmatrix}<br>$$ {%raw%}<br><strong>解</strong></p>
 <ol>
 <li><p>由最左的非零列开始. 这是一个主元列. 主元的位置在该列顶端.</p>
 </li>
 <li><p>在主元列选取一个非零元素作为主元. 若有必要的话，对换两行使这个元素移到主元位置上.、</p>
-<p>这里我们选取第三行第一列的3作为主元，对换一、三行将其移到主元位置.<br>$$<br>\begin{bmatrix}<br>3 &amp; -9 &amp; 12 &amp; -9 &amp;6 &amp;15\\<br>3 &amp; -7 &amp; 8 &amp; -5 &amp; 8 &amp; 9\\<br>0 &amp; 3 &amp; -6 &amp; 6 &amp; 4 &amp; -5<br>\end{bmatrix}<br>$$</p>
+<p>这里我们选取第三行第一列的3作为主元，对换一、三行将其移到主元位置.<br>$$ {%raw%}<br>\begin{bmatrix}<br>3 &amp; -9 &amp; 12 &amp; -9 &amp;6 &amp;15\<br>3 &amp; -7 &amp; 8 &amp; -5 &amp; 8 &amp; 9\<br>0 &amp; 3 &amp; -6 &amp; 6 &amp; 4 &amp; -5<br>\end{bmatrix}<br>$$ {%raw%}</p>
 </li>
 <li><p>用倍加行变换将主元下方元素变为0.</p>
-<p>第二行加上-1倍的第一行.<br>$$<br>\begin{bmatrix}<br>3 &amp; -9 &amp; 12 &amp; -9 &amp;6 &amp;15\\<br>0 &amp; 2 &amp; -4 &amp; 4 &amp; 2 &amp; -6\\<br>0 &amp; 3 &amp; -6 &amp; 6 &amp; 4 &amp; -5<br>\end{bmatrix}<br>$$</p>
+<p>第二行加上-1倍的第一行.<br>$$ {%raw%}<br>\begin{bmatrix}<br>3 &amp; -9 &amp; 12 &amp; -9 &amp;6 &amp;15\<br>0 &amp; 2 &amp; -4 &amp; 4 &amp; 2 &amp; -6\<br>0 &amp; 3 &amp; -6 &amp; 6 &amp; 4 &amp; -5<br>\end{bmatrix}<br>$$ {%raw%}</p>
 </li>
 <li><p>暂时不管包含主元位置的行以及它上面的各行，对剩下的子矩阵（类似于行列式中的余子式）使用上述三个步骤直到没有非零行需要处理为止.</p>
-<p>即我们只需考虑如下部分. 我们选取2为主元，重复上述操作.<br>$$<br>\begin{bmatrix}<br>2 &amp; -4 &amp; 4 &amp; 2 &amp; -6\\<br>3 &amp; -6 &amp; 6 &amp; 4 &amp; -5<br>\end{bmatrix}<br>$$<br>最终得到<br>$$<br>\begin{bmatrix}<br>3 &amp; -9 &amp; 12 &amp; -9 &amp;6 &amp;15\\<br>0 &amp; 2 &amp; -4 &amp; 4 &amp; 2 &amp; -6\\<br>0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 4<br>\end{bmatrix}<br>$$</p>
+<p>即我们只需考虑如下部分. 我们选取2为主元，重复上述操作.<br>$$ {%raw%}<br>\begin{bmatrix}<br>2 &amp; -4 &amp; 4 &amp; 2 &amp; -6\<br>3 &amp; -6 &amp; 6 &amp; 4 &amp; -5<br>\end{bmatrix}<br>$$ {%raw%}<br>最终得到<br>$$ {%raw%}<br>\begin{bmatrix}<br>3 &amp; -9 &amp; 12 &amp; -9 &amp;6 &amp;15\<br>0 &amp; 2 &amp; -4 &amp; 4 &amp; 2 &amp; -6\<br>0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 4<br>\end{bmatrix}<br>$$ {%raw%}</p>
 </li>
-<li><p>由最右边的主元开始，把每个主元上方的各元素变成0，如果某个主元素不是1，用倍乘变换将它变成1.<br>$$<br>\begin{bmatrix}</p>
-<p>1&amp; 0 &amp; -2 &amp; 3 &amp;0 &amp;-24\\<br>0 &amp; 1 &amp; -2 &amp; 2 &amp; 0 &amp; -7\\<br>0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 4<br>\end{bmatrix}<br>$$<br>这就是原矩阵的简化阶梯形.</p>
+<li><p>由最右边的主元开始，把每个主元上方的各元素变成0，如果某个主元素不是1，用倍乘变换将它变成1.<br>$$ {%raw%}<br>\begin{bmatrix}</p>
+<p>1&amp; 0 &amp; -2 &amp; 3 &amp;0 &amp;-24\<br>0 &amp; 1 &amp; -2 &amp; 2 &amp; 0 &amp; -7\<br>0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 4<br>\end{bmatrix}<br>$$ {%raw%}<br>这就是原矩阵的简化阶梯形.</p>
 </li>
 </ol>
 <ul>
@@ -526,9 +526,9 @@
 <li>步骤2中计算机程序通常选择一列中绝对值最大的元素作为主元. 这种方法通常称为部分主元法，可以减少计算中的舍入误差.</li>
 </ul>
 <h4 id="1-2-2-线性方程的解"><a href="#1-2-2-线性方程的解" class="headerlink" title="1.2.2 线性方程的解"></a>1.2.2 线性方程的解</h4><p>我们将行简化算法应用于方程组的增广矩阵可以得到线性方程组解集的一种显式表示法.</p>
-<p>例如，某个线性方程组的增广矩阵已经化为等价的简化阶梯形：<br>$$<br>\begin{bmatrix}</p>
-<p>1&amp; 0 &amp; -5 &amp; 1\\<br>0 &amp; 1 &amp; 1 &amp; 4\\<br>0 &amp; 0 &amp; 0 &amp; 0<br>\end{bmatrix}<br>$$<br>对应的线性方程组是<br>$$ <br>\begin{cases}<br>x_1 \ \ \ \ \ \ \ \ \ - 5x_3=1 \\<br>\ \ \ \ \ \ \ \ \ x_2 + \ \ x_3 = 4 \\<br>\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ 0 =0<br>\end{cases}<br>$$ {% raw %}<br>我们称对应主元列的变量 $x_1$ 和 $x_2$ 为<strong>基本变量（先导变量）</strong>，其他变量如 $x_3$ 为<strong>自由变量</strong>.</p>
-<p>我们可以将基本变量用自由变量表示，这样就得到了线性方程组的显式表示（称为<strong>通解</strong>）.<br>$$<br>\begin{cases}<br>x_1=1+5x_3\<br>x_2=4-x_3\<br>x_3为自由变量<br>\end{cases}<br>$$<br>这种表示也称为解集的<strong>参数表示</strong>. 解方程组就是要求出解集的这种参数表示或确定它无解.（在1.5节中我们将讨论解集的<strong>参数向量形式</strong>，两者紧密相关）</p>
+<p>例如，某个线性方程组的增广矩阵已经化为等价的简化阶梯形：<br>$$ {%raw%}<br>\begin{bmatrix}</p>
+<p>1&amp; 0 &amp; -5 &amp; 1\<br>0 &amp; 1 &amp; 1 &amp; 4\<br>0 &amp; 0 &amp; 0 &amp; 0<br>\end{bmatrix}<br>$$ {%raw%}<br>对应的线性方程组是<br>$$ {%raw%}<br>\begin{cases}<br>\begin{aligned}<br>x_1 \ \ \ \ \ \ \ \ \ - 5x_3=1 \<br>\ \ \ \ \ \ \ \ \ x_2 + \ \ x_3 = 4 \<br>\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ 0 =0<br>\end{aligned}<br>\end{cases}<br>$$ {%raw%}<br>我们称对应主元列的变量 $x_1$ 和 $x_2$ 为<strong>基本变量（先导变量）</strong>，其他变量如 $x_3$ 为<strong>自由变量</strong>.</p>
+<p>我们可以将基本变量用自由变量表示，这样就得到了线性方程组的显式表示（称为<strong>通解</strong>）.<br>$$ {%raw%}<br>\begin{cases}<br>x_1=1+5x_3\<br>x_2=4-x_3\<br>x_3为自由变量<br>\end{cases}<br>$$ {%raw%}<br>这种表示也称为解集的<strong>参数表示</strong>. 解方程组就是要求出解集的这种参数表示或确定它无解.（在1.5节中我们将讨论解集的<strong>参数向量形式</strong>，两者紧密相关）</p>
 <p>当方程组是相容的且具有自由变量时，它的解集具有多种参数表示，我们总是约定使用自由变量作为参数表示解集.</p>
 <h4 id="1-2-3-存在性和唯一性问题"><a href="#1-2-3-存在性和唯一性问题" class="headerlink" title="1.2.3 存在性和唯一性问题"></a>1.2.3 存在性和唯一性问题</h4><p>要回答解的存在性和唯一性问题，显然我们只需要考方程组增广矩阵的阶梯形即可.</p>
 <blockquote>
@@ -565,7 +565,7 @@
 <p>显然，$\rm Span{\boldsymbol{v}}$ 和 $\rm Span{\boldsymbol{u,v}}$ 的几何解释是直观的. 这里不作讨论.</p>
 <h3 id="1-4-矩阵方程"><a href="#1-4-矩阵方程" class="headerlink" title="1.4 矩阵方程"></a>1.4 矩阵方程</h3><p>线性代数中的一个基本思想是把向量的线性组合看做矩阵和向量的积. 故我们给出如下定义.</p>
 <blockquote>
-<p><strong>定义</strong> 若 $A$ 是 $m×n$ 矩阵，它的各列为 $\boldsymbol{a}_1, \boldsymbol{a}_2,\cdots,\boldsymbol{a}_n$.若 $\boldsymbol{x}$ 是 $\mathbb{R}^n$ 中的向量，则 $A$ 与 $\boldsymbol{x}$ 的积（记为 $A\boldsymbol{x}$）就是 <strong>$A$ 的各列以 $\boldsymbol{x}$ 中对应元素为权的线性组合</strong>，即<br>$$<br>A\boldsymbol{x}=[<br>\boldsymbol{a}_1\ \boldsymbol{a}_2\ \cdots\ \boldsymbol{a}_n]\begin{bmatrix}<br>x_1\x_2\\vdots\x_n<br>\end{bmatrix}=x_1\boldsymbol{a}_1+x_2\boldsymbol{a}_2+\cdots+x_n\boldsymbol{a}_n<br>$$</p>
+<p><strong>定义</strong> 若 $A$ 是 $m×n$ 矩阵，它的各列为 $\boldsymbol{a}_1, \boldsymbol{a}_2,\cdots,\boldsymbol{a}_n$.若 $\boldsymbol{x}$ 是 $\mathbb{R}^n$ 中的向量，则 $A$ 与 $\boldsymbol{x}$ 的积（记为 $A\boldsymbol{x}$）就是 <strong>$A$ 的各列以 $\boldsymbol{x}$ 中对应元素为权的线性组合</strong>，即<br>$$ {%raw%}<br>A\boldsymbol{x}=[<br>\boldsymbol{a}_1\ \boldsymbol{a}_2\ \cdots\ \boldsymbol{a}_n]\begin{bmatrix}<br>x_1\x_2\\vdots\x_n<br>\end{bmatrix}=x_1\boldsymbol{a}_1+x_2\boldsymbol{a}_2+\cdots+x_n\boldsymbol{a}_n<br>$$ {%raw%}</p>
 </blockquote>
 <p>注意 $A\boldsymbol{x}$ 仅当 $A$ 的列数等于 $\boldsymbol{x}$ 中元素个数时才有意义.</p>
 <p>形如$A\boldsymbol{x}=\boldsymbol{b}$ 的方程我们称为<strong>矩阵方程</strong>以区别于向量方程.</p>
@@ -633,7 +633,7 @@
 <p><strong>定理7</strong> （克拉默法则）</p>
 <p>设 $A$ 是一个可逆的 $n×n$ 矩阵，对 $\mathbb{R}^n$ 中任意向量 $\boldsymbol{b}$ ，方程 $A\boldsymbol{x}=\boldsymbol{b}$ 的唯一解可由下式给出：<br>$$<br>x_i=\frac{\det A_i(\boldsymbol{b})}{\det A}\ (i=1,2,\cdots,n)<br>$$</p>
 </blockquote>
-<p><strong>证</strong>  用 $\boldsymbol{a}_1,\cdots,\boldsymbol{a}_n$ 表示 $A$ 的列，用 $\boldsymbol{e}_1,\cdots,\boldsymbol{e}_n$ 表示 $n×n$ 单位矩阵 $I$ 的列. 若 $A\boldsymbol{x}=\boldsymbol{b}$ ，则由矩阵乘法的定义有<br>$$<br>\begin{aligned}<br>A\cdot I_i(\boldsymbol{x})&amp;=A[\boldsymbol{e}_1\cdots\ \boldsymbol x\ \cdots \boldsymbol{e}_n]=[A\boldsymbol{e}_1\cdots\ A\boldsymbol x\ \cdots A\boldsymbol{e}_n]\<br>&amp;=[\boldsymbol{a}_1\cdots\ \boldsymbol b\ \cdots \boldsymbol{a}_n]=A_i(\boldsymbol b)<br>\end{aligned}<br>$$<br>由行列式的乘法性质有<br>$$<br>(\det A)(\det I_i(\boldsymbol{x}))=\det A_i(\boldsymbol{b})<br>$$<br>其中 $\det I_i(\boldsymbol{x})=x_i$ ，且由于 $A$ 可逆，从而 $\det A\ne0$，故<br>$$<br>x_i=\frac{\det A_i(\boldsymbol{b})}{\det A}<br>$$</p>
+<p><strong>证</strong>  用 $\boldsymbol{a}_1,\cdots,\boldsymbol{a}_n$ 表示 $A$ 的列，用 $\boldsymbol{e}_1,\cdots,\boldsymbol{e}_n$ 表示 $n×n$ 单位矩阵 $I$ 的列. 若 $A\boldsymbol{x}=\boldsymbol{b}$ ，则由矩阵乘法的定义有<br>$$ {%raw%}<br>\begin{aligned}<br>A\cdot I_i(\boldsymbol{x})&amp;=A[\boldsymbol{e}_1\cdots\ \boldsymbol x\ \cdots \boldsymbol{e}_n]=[A\boldsymbol{e}_1\cdots\ A\boldsymbol x\ \cdots A\boldsymbol{e}_n]\<br>&amp;=[\boldsymbol{a}_1\cdots\ \boldsymbol b\ \cdots \boldsymbol{a}_n]=A_i(\boldsymbol b)<br>\end{aligned}<br>$$ {%raw%}<br>由行列式的乘法性质有<br>$$<br>(\det A)(\det I_i(\boldsymbol{x}))=\det A_i(\boldsymbol{b})<br>$$<br>其中 $\det I_i(\boldsymbol{x})=x_i$ ，且由于 $A$ 可逆，从而 $\det A\ne0$，故<br>$$<br>x_i=\frac{\det A_i(\boldsymbol{b})}{\det A}<br>$$</p>
 <blockquote>
 <p><strong>定理8</strong> （逆矩阵公式）</p>
 <p>设 $A$ 是一个可逆的 $n×n$ 矩阵，则<br>$$<br>A^{-1}=\frac{1}{\det A}{\rm {adj}}A.<br>$$</p>
@@ -728,7 +728,7 @@
 <p><strong>证</strong>  </p>
 <h3 id="4-7-基变换"><a href="#4-7-基变换" class="headerlink" title="4.7 基变换"></a>4.7 基变换</h3><p>下面给出的例子展示了求解基变换矩阵的一般性过程.</p>
 <p><strong>例</strong>  设 $\boldsymbol{b}_1=\begin{bmatrix} -9\1\end{bmatrix},\boldsymbol{b}_2=\begin{bmatrix} -5\11\end{bmatrix},\boldsymbol{c}_1=\begin{bmatrix} 1\-4\end{bmatrix},\boldsymbol{c}_2=\begin{bmatrix} 3\-5\end{bmatrix}$，考虑 $\mathbb R^2$ 中的基 $\mathcal B={\boldsymbol{b}_1,\boldsymbol{b}_2},\mathcal C={\boldsymbol{c}_1,\boldsymbol{c}_1}$，求由 $\mathcal B$ 到 $\mathcal C$ 的坐标变换矩阵.</p>
-<p><strong>解</strong>  设 $[\boldsymbol{b}_1]_{\mathcal c}=\begin{bmatrix} x_1\x_2\end{bmatrix},[\boldsymbol{b}_2]_{\mathcal c}=\begin{bmatrix} y_1\y_2\end{bmatrix}$，于是由定义，有：<br>$$<br>\begin{bmatrix}\boldsymbol{c}_1&amp; \boldsymbol{c}_2\end{bmatrix}\begin{bmatrix} x_1\x_2\end{bmatrix}=\boldsymbol{b}_1\<br>\begin{bmatrix}\boldsymbol{c}_1&amp; \boldsymbol{c}_2\end{bmatrix}\begin{bmatrix} y1\y_2\end{bmatrix}=\boldsymbol{b}_2<br>$$<br>为了同步解出这两个方程组，将 $\boldsymbol{b}_1$ 和 $\boldsymbol{b}_2$ 扩大到系数矩阵中并进行行化简：<br>$$<br>\begin{bmatrix}\boldsymbol{c}_1&amp; \boldsymbol{c}_2&amp;\boldsymbol{b}_1&amp;\boldsymbol{b}_2\end{bmatrix}<br>=\begin{bmatrix}<br>1 &amp; 3 &amp; -9 &amp; -5\<br>-4 &amp; -5 &amp; 1 &amp; -1<br>\end{bmatrix}<br>\sim<br>\begin{bmatrix}<br>1 &amp; 0 &amp; 6 &amp; 4\<br>0 &amp; 1 &amp; -5 &amp; 3<br>\end{bmatrix}<br>$$</p>
+<p><strong>解</strong>  设 $[\boldsymbol{b}_1]_{\mathcal c}=\begin{bmatrix} x_1\x_2\end{bmatrix},[\boldsymbol{b}_2]_{\mathcal c}=\begin{bmatrix} y_1\y_2\end{bmatrix}$，于是由定义，有：<br>$$ {%raw%}<br>\begin{bmatrix}\boldsymbol{c}_1&amp; \boldsymbol{c}_2\end{bmatrix}\begin{bmatrix} x_1\x_2\end{bmatrix}=\boldsymbol{b}_1\<br>\begin{bmatrix}\boldsymbol{c}_1&amp; \boldsymbol{c}_2\end{bmatrix}\begin{bmatrix} y1\y_2\end{bmatrix}=\boldsymbol{b}_2<br>$$ {%raw%}<br>为了同步解出这两个方程组，将 $\boldsymbol{b}_1$ 和 $\boldsymbol{b}_2$ 扩大到系数矩阵中并进行行化简：<br>$$ {%raw%}<br>\begin{bmatrix}\boldsymbol{c}_1&amp; \boldsymbol{c}_2&amp;\boldsymbol{b}_1&amp;\boldsymbol{b}_2\end{bmatrix}<br>=\begin{bmatrix}<br>1 &amp; 3 &amp; -9 &amp; -5\<br>-4 &amp; -5 &amp; 1 &amp; -1<br>\end{bmatrix}<br>\sim<br>\begin{bmatrix}<br>1 &amp; 0 &amp; 6 &amp; 4\<br>0 &amp; 1 &amp; -5 &amp; 3<br>\end{bmatrix}<br>$$ {%raw%}</p>
 <h3 id="4-8-向量空间的应用"><a href="#4-8-向量空间的应用" class="headerlink" title="4.8 向量空间的应用"></a>4.8 向量空间的应用</h3><h4 id="4-8-1-离散时间信号"><a href="#4-8-1-离散时间信号" class="headerlink" title="4.8.1 离散时间信号"></a>4.8.1 离散时间信号</h4><p>在处理离散时间信号的时候，引入<strong><em>Cassorati</em>矩阵</strong>可以判断信号空间中信号是否线性无关. </p>
 <p>其基本原理就是构造了一个形如1.7节线性无关定义中的给出的方程，这个方程的系矩阵就是<em>Cassorati</em>矩阵. 再利用了2.3节中提到的<strong>方程 $A\boldsymbol{x}=\boldsymbol{0}$ 只有平凡解时矩阵 $A$ 可逆</strong>这一逆矩阵定理，可以说明：</p>
 <p>如果<em>Cassorati</em>矩阵可逆，根据线性无关的定义，对应的信号是线性无关的；如果<em>Cassorati</em>矩阵不可逆，则对应信号可能线性相关也可能线性无关.</p>
@@ -754,14 +754,14 @@
 <p><strong>定理2</strong>  $\lambda_1,\cdots,\lambda_r$ 是 $n\times n$ 矩阵 $A$ 的相异的特征值，$\boldsymbol{v}_1,\cdots,\boldsymbol{v}_r$ 是与 $\lambda_1,\cdots,\lambda_r$ 对应的特征向量，那么向量集合 ${ \lambda_1,\cdots,\lambda_r }$ 线性无关.</p>
 </blockquote>
 <p><strong>证</strong>  </p>
-<h3 id="5-2-特征方程"><a href="#5-2-特征方程" class="headerlink" title="5.2 特征方程"></a>5.2 特征方程</h3><p>参考3.2节，设 $A$ 为 $n\times n$ 矩阵，则对 $A$ 的行列式 ${\rm det}\ A$ 有：<br>$$<br>{\rm det}\ A=<br>\begin{cases}<br>(-1)^r u_{11}\cdots u_{nn}  &amp; 当A可逆 \<br>0 &amp; 当A不可逆<br>\end{cases}<br>$$</p>
+<h3 id="5-2-特征方程"><a href="#5-2-特征方程" class="headerlink" title="5.2 特征方程"></a>5.2 特征方程</h3><p>参考3.2节，设 $A$ 为 $n\times n$ 矩阵，则对 $A$ 的行列式 ${\rm det}\ A$ 有：<br>$$ {%raw%}<br>{\rm det}\ A=<br>\begin{cases}<br>(-1)^r u_{11}\cdots u_{nn}  &amp; 当A可逆 \<br>0 &amp; 当A不可逆<br>\end{cases}<br>$$ {%raw%}</p>
 <blockquote>
 <p>数 $\lambda$ 是 $n\times n$ 矩阵 $A$ 的特征值的充要条件是 <strong>$\lambda$ 是特征方程 ${\rm det}(A-\lambda I)=0$ 的根.</strong></p>
 </blockquote>
 <h3 id="5-3-对角化"><a href="#5-3-对角化" class="headerlink" title="5.3 对角化"></a>5.3 对角化</h3><h3 id="5-3-特征向量与线性变换"><a href="#5-3-特征向量与线性变换" class="headerlink" title="5.3 特征向量与线性变换"></a>5.3 特征向量与线性变换</h3><h3 id="5-5-复特征值"><a href="#5-5-复特征值" class="headerlink" title="5.5 复特征值"></a>5.5 复特征值</h3><h3 id="5-6-特征值与特征向量的应用"><a href="#5-6-特征值与特征向量的应用" class="headerlink" title="5.6  特征值与特征向量的应用"></a>5.6  特征值与特征向量的应用</h3><h3 id="5-7-特征值的迭代估计"><a href="#5-7-特征值的迭代估计" class="headerlink" title="5.7 特征值的迭代估计"></a>5.7 特征值的迭代估计</h3><h2 id="6-正交性和最小二乘法"><a href="#6-正交性和最小二乘法" class="headerlink" title="6 正交性和最小二乘法"></a>6 正交性和最小二乘法</h2><h3 id="6-1-內积、长度和正交性"><a href="#6-1-內积、长度和正交性" class="headerlink" title="6.1 內积、长度和正交性"></a>6.1 內积、长度和正交性</h3><blockquote>
 <p><strong>定义</strong>  若 $\boldsymbol{u}$ 和 $\boldsymbol{v}$ 是属于 $\mathbb{R}^n$ 的向量，数 $\boldsymbol{u}^{\rm T}\boldsymbol{v}$ 称为 $\boldsymbol{u}$ 和 $\boldsymbol{v}$ 的<strong>內积</strong>（或<strong>点积</strong>），即</p>
 <p>若 $\boldsymbol{u}=\begin{bmatrix}u_1\u_2\\vdots\u_n\end{bmatrix},\boldsymbol{v}=\begin{bmatrix}v_1\v_2\\vdots\v_n\end{bmatrix}$</p>
-<p>那么 $\boldsymbol{u}$ 和 $\boldsymbol{v}$ 的內积定义为<br>$$<br>\begin{bmatrix}u_1&amp;u_2&amp;\cdots&amp;v_n\end{bmatrix}\begin{bmatrix}v_1\v_2\\vdots\v_n\end{bmatrix}=u_1v_1+u_2v_2+\cdots+u_nv_n<br>$$</p>
+<p>那么 $\boldsymbol{u}$ 和 $\boldsymbol{v}$ 的內积定义为<br>$$ {%raw%}<br>\begin{bmatrix}u_1&amp;u_2&amp;\cdots&amp;v_n\end{bmatrix}\begin{bmatrix}v_1\v_2\\vdots\v_n\end{bmatrix}=u_1v_1+u_2v_2+\cdots+u_nv_n<br>$$ {%raw%}</p>
 </blockquote>
 <blockquote>
 <p><strong>定义</strong>  若 $\boldsymbol{v}$ 是属于 $\mathbb{R}^n$ 的向量，其元素 $v_1,\cdots,v_n$.</p>
